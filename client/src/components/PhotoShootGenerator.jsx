@@ -1145,7 +1145,7 @@ export default function PhotoShootGenerator() {
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                   </svg>
-                  Назад
+                  {t.buttons.back}
                 </button>
               ) : (
                 <div style={{ width: '86px' }}></div>
@@ -1160,7 +1160,7 @@ export default function PhotoShootGenerator() {
                   onClick={() => setCurrentStep(prev => Math.min(steps.length - 1, prev + 1))}
                   className="flex items-center gap-2 px-[0.875rem] py-[0.55rem] bg-gray-700 text-gray-100 border border-gray-600 rounded-lg font-medium text-sm hover:bg-gray-600 transition-all"
                 >
-                  Далее
+                  {t.buttons.next}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>

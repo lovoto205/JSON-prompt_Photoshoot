@@ -30,7 +30,9 @@
       "selectColor": "Выбрать цвет",
       "no": "Нет",
       "fromList": "Из списка",
-      "donate": "Отблагодарить"
+      "donate": "Отблагодарить",
+      "next": "Далее",
+      "back": "Назад"
     },
     "donation": {
       "text": "Буду благодарен за донат 300 ₽ на кофе с круассаном ☕🥐<br />Это мотивирует делать новые промпты на другие темы!",
@@ -105,7 +107,9 @@
       "selectColor": "Select color",
       "no": "None",
       "fromList": "From list",
-      "donate": "Say thanks"
+      "donate": "Say thanks",
+      "next": "Next",
+      "back": "Back"
     },
     "donation": {
       "text": "I would appreciate a donation of $5 for a coffee and croissant ☕🥐<br />It motivates me to create new prompts on other topics!"
