@@ -74,7 +74,9 @@
       "enterValue": "Введите значение...",
       "colorPlaceholder": "#000000"
     },
-    "selected": "Выбрано"
+    "selected": "Выбрано",
+    "step": "Шаг",
+    "of": "из"
   },
   "en": {
     "header": {
@@ -150,6 +152,8 @@
       "enterValue": "Enter value...",
       "colorPlaceholder": "#000000"
     },
-    "selected": "Selected"
+    "selected": "Selected",
+    "step": "Step",
+    "of": "of"
   }
 }

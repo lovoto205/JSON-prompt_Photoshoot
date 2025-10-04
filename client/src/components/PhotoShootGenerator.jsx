@@ -1122,7 +1122,7 @@ export default function PhotoShootGenerator() {
                   <h2 className="text-2xl font-bold" style={{ color: '#ffaa00' }}>
                     {currentStepData.name}
                   </h2>
-                  <p className="text-sm text-gray-500">Шаг {currentStep + 1} из {steps.length}</p>
+                  <p className="text-sm text-gray-500">{t.step} {currentStep + 1} {t.of} {steps.length}</p>
                 </div>
               </div>
 
