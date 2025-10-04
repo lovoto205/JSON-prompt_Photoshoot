@@ -1291,9 +1291,9 @@ export default function PhotoShootGenerator() {
       {/* Модальное окно для JSON-промпта */}
       {showPromptModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4" onClick={() => setShowPromptModal(false)}>
-          <div className="bg-[#1a1d24] border border-gray-800 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.3)] max-w-3xl w-full max-h-[80vh] overflow-hidden" onClick={(e) => e.stopPropagation()}>
-            <div className="custom-dropdown-scroll modal-scroll overflow-y-auto px-6 py-6" style={{ marginRight: '4px', marginTop: '4px', marginBottom: '4px', maxHeight: 'calc(80vh - 8px)' }}>
-              <div className="flex items-center justify-between mb-4">
+          <div className="bg-[#1a1d24] border border-gray-800 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.3)] max-w-3xl w-full max-h-[80vh] overflow-hidden flex flex-col" onClick={(e) => e.stopPropagation()}>
+            {/* Фиксированная шапка */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-gray-800">
               <h3 className="text-xl font-semibold text-gray-100">{t.modal.promptTitle}</h3>
               <button
                 onClick={() => setShowPromptModal(false)}
@@ -1304,8 +1304,14 @@ export default function PhotoShootGenerator() {
                 </svg>
               </button>
             </div>
-            <pre className="whitespace-pre-wrap text-xs text-gray-300 bg-[#0f1115] p-4 rounded-lg leading-relaxed border border-gray-800 font-mono shadow-[inset_0_2px_8px_rgba(0,0,0,0.15)] mb-4">{prompt}</pre>
-            <div className="flex gap-2 justify-center">
+
+            {/* Скроллируемый контент */}
+            <div className="custom-dropdown-scroll modal-scroll overflow-y-auto px-6 py-4 flex-1" style={{ marginRight: '4px', marginTop: '4px', marginBottom: '4px' }}>
+              <pre className="whitespace-pre-wrap text-xs text-gray-300 bg-[#0f1115] p-4 rounded-lg leading-relaxed border border-gray-800 font-mono shadow-[inset_0_2px_8px_rgba(0,0,0,0.15)]">{prompt}</pre>
+            </div>
+
+            {/* Фиксированный футер */}
+            <div className="flex gap-2 justify-center px-6 py-4 border-t border-gray-800">
               <button
                 onClick={() => setShowPromptModal(false)}
                 className="px-6 py-3 bg-gray-700 text-gray-200 rounded-lg text-sm hover:bg-gray-600 transition-all"
@@ -1334,7 +1340,6 @@ export default function PhotoShootGenerator() {
                   </>
                 )}
               </button>
-            </div>
             </div>
           </div>
         </div>
