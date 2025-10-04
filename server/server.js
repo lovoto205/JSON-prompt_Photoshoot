@@ -36,24 +36,18 @@ app.post('/translate', async (req, res) => {
     const { text } = req.body
     if (!text) return res.json({ translatedText: '' })
 
-    // Используем LibreTranslate API (бесплатно)
-    const response = await fetch('https://libretranslate.com/translate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        q: text,
-        source: 'ru',
-        target: 'en',
-        format: 'text'
-      })
-    })
+    // Используем Google Translate через unofficial API
+    const encodedText = encodeURIComponent(text)
+    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=ru&tl=en&dt=t&q=${encodedText}`
 
+    const response = await fetch(url)
     const data = await response.json()
-    console.log('Translation response:', data)
 
-    if (data.translatedText) {
-      console.log(`Translated "${text}" -> "${data.translatedText}"`)
-      return res.json({ translatedText: data.translatedText })
+    // Google Translate возвращает массив [[["translated text", "original", null, null]], ...]
+    if (data && data[0] && data[0][0] && data[0][0][0]) {
+      const translated = data[0][0][0]
+      console.log(`Translated "${text}" -> "${translated}"`)
+      return res.json({ translatedText: translated })
     }
 
     // Если не удалось перевести, возвращаем оригинал
