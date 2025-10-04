@@ -1430,7 +1430,8 @@ export default function PhotoShootGenerator() {
             </div>
             <div className="overflow-hidden" style={{
               width: window.innerWidth < 560 ? `${window.innerWidth - 32}px` : '528px',
-              height: window.innerWidth < 560 ? `${(window.innerWidth - 32) * 292 / 518}px` : '244px'
+              height: window.innerWidth < 560 ? '168px' : '244px',
+              marginLeft: window.innerWidth < 560 ? '-6px' : '0'
             }}>
               <iframe
                 src="https://widget.donatepay.ru/widgets/page/07a9a96b8ed0b637ff25d29fae0a81a3950716ba903a22b4ef25ef36889a0057?widget_id=7066804&sum=300"
