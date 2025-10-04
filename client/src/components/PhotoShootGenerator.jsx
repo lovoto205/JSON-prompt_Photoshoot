@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { HexColorPicker } from "react-colorful";
 import parameters from "../data/parameters.json";
 import translations from "../data/translations.json";
+import dictionary from "../data/dictionary.json";
 import "./PhotoShootGenerator.css";
 
 export default function PhotoShootGenerator() {
@@ -251,10 +252,11 @@ export default function PhotoShootGenerator() {
   const inputStyles = "w-full px-3 py-2.5 pr-10 border border-gray-800 rounded-lg focus:border-gray-600 focus:ring-1 focus:ring-gray-600 transition-all outline-none bg-[#14161b] text-gray-100 cursor-pointer shadow-[0_2px_8px_rgba(0,0,0,0.1)] text-sm";
   const customInputStyles = "w-full pl-3 pr-[4.5rem] py-2.5 border border-gray-600 rounded-lg focus:border-gray-500 focus:ring-1 focus:ring-gray-500 transition-all outline-none bg-[#14161b] text-gray-100 shadow-[0_2px_8px_rgba(0,0,0,0.1)] text-sm";
 
-  // Функция перевода через API
+  // Функция перевода с использованием словаря
   const translateToEnglish = async (paramKey, ruValue) => {
     if (!ruValue) return "";
 
+    const cleanValue = ruValue.trim().toLowerCase();
     console.log(`[Translate] Translating "${ruValue}" for ${paramKey}`);
 
     // Если текст полностью на латинице или цифры, возвращаем как есть
@@ -263,8 +265,8 @@ export default function PhotoShootGenerator() {
       return ruValue;
     }
 
-    // Проверяем кэш (только если перевод отличается от оригинала)
-    if (translationCache[ruValue] && translationCache[ruValue] !== ruValue) {
+    // Проверяем кэш
+    if (translationCache[ruValue]) {
       console.log(`[Translate] Found in cache: "${ruValue}" -> "${translationCache[ruValue]}"`);
       return translationCache[ruValue];
     }
@@ -272,36 +274,37 @@ export default function PhotoShootGenerator() {
     // Проверяем в базе examples
     const param = parameters[paramKey];
     if (param && param.examples) {
-      const match = param.examples.find(ex => ex.ru.toLowerCase() === ruValue.toLowerCase());
+      const match = param.examples.find(ex => ex.ru.toLowerCase() === cleanValue);
       if (match) {
         console.log(`[Translate] Found in examples: "${ruValue}" -> "${match.en}"`);
+        setTranslationCache(prev => ({ ...prev, [ruValue]: match.en }));
         return match.en;
       }
     }
 
-    // Переводим через API
-    console.log(`[Translate] Calling API to translate: "${ruValue}"`);
-    try {
-      const response = await fetch('https://json-prompt-photoshoot.onrender.com/translate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text: ruValue })
-      });
-      const data = await response.json();
-      const translation = data.translation || ruValue;
-
-      console.log(`[Translate] API response: "${ruValue}" -> "${translation}"`);
-
-      // Сохраняем в кэш только если перевод успешен (отличается от оригинала)
-      if (translation !== ruValue) {
-        setTranslationCache(prev => ({ ...prev, [ruValue]: translation }));
-      }
-
+    // Проверяем в словаре (поддержка точного и частичного совпадения)
+    if (dictionary[cleanValue]) {
+      const translation = dictionary[cleanValue];
+      console.log(`[Translate] Found in dictionary: "${ruValue}" -> "${translation}"`);
+      setTranslationCache(prev => ({ ...prev, [ruValue]: translation }));
       return translation;
-    } catch (e) {
-      console.error('[Translate] Error:', e);
-      return ruValue;
     }
+
+    // Пробуем найти слова по частям (для фраз)
+    const words = cleanValue.split(/\s+/);
+    if (words.length > 1) {
+      const translatedWords = words.map(word => dictionary[word] || word);
+      if (translatedWords.some(w => w !== words[words.indexOf(w)])) {
+        const translation = translatedWords.join(' ');
+        console.log(`[Translate] Translated by words: "${ruValue}" -> "${translation}"`);
+        setTranslationCache(prev => ({ ...prev, [ruValue]: translation }));
+        return translation;
+      }
+    }
+
+    // Если не найдено, возвращаем оригинал (пользователь может ввести на английском)
+    console.log(`[Translate] Not found in dictionary, returning original: "${ruValue}"`);
+    return ruValue;
   };
 
   const handleChange = (key, value) => {
