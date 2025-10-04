@@ -36,18 +36,24 @@ app.post('/translate', async (req, res) => {
     const { text } = req.body
     if (!text) return res.json({ translatedText: '' })
 
-    // Используем бесплатный API MyMemory
-    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=ru|en`
+    // Используем LibreTranslate API (бесплатно)
+    const response = await fetch('https://libretranslate.com/translate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        q: text,
+        source: 'ru',
+        target: 'en',
+        format: 'text'
+      })
+    })
 
-    const response = await fetch(url)
     const data = await response.json()
-
     console.log('Translation response:', data)
 
-    if (data.responseData && data.responseData.translatedText) {
-      const translation = data.responseData.translatedText
-      console.log(`Translated "${text}" -> "${translation}"`)
-      return res.json({ translatedText: translation })
+    if (data.translatedText) {
+      console.log(`Translated "${text}" -> "${data.translatedText}"`)
+      return res.json({ translatedText: data.translatedText })
     }
 
     // Если не удалось перевести, возвращаем оригинал
