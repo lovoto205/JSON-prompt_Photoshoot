@@ -1207,6 +1207,7 @@ export default function PhotoShootGenerator() {
                   "MOOD/ATMOSPHERE": [],
                   POST_PROCESSING: []
                 });
+                setCustomInputMode({});
                 setCurrentStep(0);
               }}
               className="py-3 rounded-lg font-semibold text-sm transition-all bg-gray-700 text-gray-200 hover:bg-gray-600 border border-gray-600"
