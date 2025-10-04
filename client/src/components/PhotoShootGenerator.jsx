@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { HexColorPicker } from "react-colorful";
 import parameters from "../data/parameters.json";
 import translations from "../data/translations.json";
-import dictionary from "../data/dictionary.json";
 import "./PhotoShootGenerator.css";
 
 export default function PhotoShootGenerator() {
@@ -257,17 +256,17 @@ export default function PhotoShootGenerator() {
     if (!ruValue) return "";
 
     const cleanValue = ruValue.trim().toLowerCase();
-    console.log(`[Translate] Translating "${ruValue}" for ${paramKey}`);
+    console.log(`[Translate] Input: "${ruValue}" for ${paramKey}`);
 
     // Если текст полностью на латинице или цифры, возвращаем как есть
     if (/^[a-zA-Z0-9\s\-+.,]+$/.test(ruValue)) {
-      console.log(`[Translate] Already in English: "${ruValue}"`);
+      console.log(`[Translate] Already English, skipping`);
       return ruValue;
     }
 
     // Проверяем кэш
     if (translationCache[ruValue]) {
-      console.log(`[Translate] Found in cache: "${ruValue}" -> "${translationCache[ruValue]}"`);
+      console.log(`[Translate] Found in cache: "${translationCache[ruValue]}"`);
       return translationCache[ruValue];
     }
 
@@ -276,40 +275,34 @@ export default function PhotoShootGenerator() {
     if (param && param.examples) {
       const match = param.examples.find(ex => ex.ru.toLowerCase() === cleanValue);
       if (match) {
-        console.log(`[Translate] Found in examples: "${ruValue}" -> "${match.en}"`);
+        console.log(`[Translate] Found in examples: "${match.en}"`);
         setTranslationCache(prev => ({ ...prev, [ruValue]: match.en }));
         return match.en;
       }
     }
 
-    // Проверяем в словаре (для быстрых переводов)
-    if (dictionary[cleanValue]) {
-      const translation = dictionary[cleanValue];
-      console.log(`[Translate] Found in dictionary: "${ruValue}" -> "${translation}"`);
-      setTranslationCache(prev => ({ ...prev, [ruValue]: translation }));
-      return translation;
-    }
-
-    // Используем API для перевода (если не нашли в словаре)
+    // Используем Google Translate напрямую (без backend)
     try {
-      console.log(`[Translate] Using API to translate: "${ruValue}"`);
-      const response = await fetch('https://json-prompt-photoshoot.onrender.com/translate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text: ruValue })
-      });
+      console.log(`[Translate] Calling Google Translate for: "${ruValue}"`);
+      const encodedText = encodeURIComponent(ruValue);
+      const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=ru&tl=en&dt=t&q=${encodedText}`;
 
+      const response = await fetch(url);
       const data = await response.json();
-      const translation = data.translatedText || ruValue;
 
-      console.log(`[Translate] API response: "${ruValue}" -> "${translation}"`);
+      // Google Translate возвращает массив [[["translated text", "original", null, null]], ...]
+      if (data && data[0] && data[0][0] && data[0][0][0]) {
+        const translation = data[0][0][0];
+        console.log(`[Translate] Translated: "${ruValue}" -> "${translation}"`);
 
-      // Сохраняем в кэш
-      if (translation !== ruValue) {
+        // Сохраняем в кэш
         setTranslationCache(prev => ({ ...prev, [ruValue]: translation }));
+        return translation;
       }
 
-      return translation;
+      // Если не удалось перевести, возвращаем оригинал
+      console.log('[Translate] Translation failed, returning original');
+      return ruValue;
     } catch (e) {
       console.error('[Translate] API error:', e);
       return ruValue;
