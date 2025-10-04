@@ -34,7 +34,7 @@ app.post('/translate', async (req, res) => {
   try {
     console.log('Translation request received:', req.body)
     const { text } = req.body
-    if (!text) return res.json({ translation: '' })
+    if (!text) return res.json({ translatedText: '' })
 
     // Используем бесплатный API MyMemory
     const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=ru|en`
@@ -47,15 +47,15 @@ app.post('/translate', async (req, res) => {
     if (data.responseData && data.responseData.translatedText) {
       const translation = data.responseData.translatedText
       console.log(`Translated "${text}" -> "${translation}"`)
-      return res.json({ translation })
+      return res.json({ translatedText: translation })
     }
 
     // Если не удалось перевести, возвращаем оригинал
     console.log('Translation failed, returning original text')
-    res.json({ translation: text })
+    res.json({ translatedText: text })
   } catch (e) {
     console.error('Translation error:', e)
-    res.json({ translation: req.body.text || text })
+    res.json({ translatedText: req.body.text || '' })
   }
 })
 
@@ -85,4 +85,5 @@ app.post('/generate', upload.single('photo'), async (req, res) => {
   }
 })
 
-app.listen(5000, () => console.log('Server on http://localhost:5000'))
+const PORT = process.env.PORT || 5000
+app.listen(PORT, () => console.log(`Server on port ${PORT}`))
