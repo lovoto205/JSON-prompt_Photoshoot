@@ -282,7 +282,7 @@ export default function PhotoShootGenerator() {
     // Переводим через API
     console.log(`[Translate] Calling API to translate: "${ruValue}"`);
     try {
-      const response = await fetch('http://localhost:5000/translate', {
+      const response = await fetch('https://photoshoot-backend.onrender.com/translate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: ruValue })
