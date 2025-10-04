@@ -1416,7 +1416,7 @@ export default function PhotoShootGenerator() {
       {/* Модальное окно с донатом */}
       {showDonateModal && language === 'ru' && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4" onClick={() => setShowDonateModal(false)}>
-          <div className="bg-[#1a1d24] border border-gray-800 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.3)] overflow-hidden" style={{ width: '528px', height: '296px', maxWidth: 'calc(100% - 32px)' }} onClick={(e) => e.stopPropagation()}>
+          <div className="bg-[#1a1d24] border border-gray-800 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.3)] overflow-hidden max-w-full" onClick={(e) => e.stopPropagation()}>
             <div className="flex items-center justify-between px-6 py-4 bg-[#1a1d24] border-b border-gray-800">
               <h3 className="text-xl font-semibold text-gray-100">{t.donation.modalTitle}</h3>
               <button
@@ -1428,14 +1428,25 @@ export default function PhotoShootGenerator() {
                 </svg>
               </button>
             </div>
-            <div style={{ padding: 0, margin: 0 }}>
+            <div className="overflow-hidden" style={{
+              width: window.innerWidth < 560 ? `${window.innerWidth - 32}px` : '528px',
+              height: window.innerWidth < 560 ? `${(window.innerWidth - 32) * 292 / 518}px` : '244px'
+            }}>
               <iframe
                 src="https://widget.donatepay.ru/widgets/page/07a9a96b8ed0b637ff25d29fae0a81a3950716ba903a22b4ef25ef36889a0057?widget_id=7066804&sum=300"
                 width="518"
-                height="292"
+                height="244"
                 frameBorder="0"
                 scrolling="no"
-                style={{ display: 'block', border: 'none', overflow: 'hidden', margin: 0, padding: 0 }}
+                style={{
+                  display: 'block',
+                  border: 'none',
+                  overflow: 'hidden',
+                  margin: 0,
+                  padding: 0,
+                  transform: window.innerWidth < 560 ? `scale(${(window.innerWidth - 32) / 518})` : 'none',
+                  transformOrigin: 'top left'
+                }}
               ></iframe>
             </div>
           </div>
