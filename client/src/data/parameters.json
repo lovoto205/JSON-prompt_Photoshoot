@@ -1,0 +1,1780 @@
+{
+  "GENDER": {
+    "translation": "Пол",
+    "translationEn": "Gender",
+    "input": "select",
+    "examples": [
+      {
+        "en": "man",
+        "ru": "Мужчина"
+      },
+      {
+        "en": "woman",
+        "ru": "Женщина"
+      }
+    ]
+  },
+  "AGE": {
+    "translation": "Возраст",
+    "translationEn": "Age",
+    "input": "text",
+    "examples": []
+  },
+  "WEIGHT_KG": {
+    "translation": "Вес (кг)",
+    "input": "text",
+    "unit": "kg",
+    "examples": [],
+    "translationEn": "Weight (kg)"
+  },
+  "BODY_TYPE": {
+    "translation": "Телосложение",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "slim",
+        "ru": "Худощавый"
+      },
+      {
+        "en": "athletic",
+        "ru": "Спортивный"
+      },
+      {
+        "en": "muscular",
+        "ru": "Мускулистый"
+      },
+      {
+        "en": "plus-size",
+        "ru": "Плюс-сайз"
+      }
+    ],
+    "translationEn": "Body Type"
+  },
+  "PHOTO_STYLE": {
+    "translation": "Стиль фотосессии",
+    "input": "checkbox",
+    "examples": [
+      {
+        "en": "fashion editorial",
+        "ru": "Модная съёмка"
+      },
+      {
+        "en": "business portrait",
+        "ru": "Деловой портрет"
+      },
+      {
+        "en": "glamour",
+        "ru": "Гламур"
+      },
+      {
+        "en": "cinematic",
+        "ru": "Киношный"
+      },
+      {
+        "en": "vintage",
+        "ru": "Винтаж"
+      },
+      {
+        "en": "documentary",
+        "ru": "Документальный"
+      },
+      {
+        "en": "fine art",
+        "ru": "Художественный"
+      }
+    ],
+    "translationEn": "Photo Style"
+  },
+  "FAMOUS_PHOTOGRAPHER_STYLE": {
+    "translation": "Стиль известного фотографа",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "Annie Leibovitz",
+        "ru": "Энни Лейбовиц"
+      },
+      {
+        "en": "Richard Avedon",
+        "ru": "Ричард Аведон"
+      },
+      {
+        "en": "Peter Lindbergh",
+        "ru": "Питер Линдберг"
+      },
+      {
+        "en": "Steve McCurry",
+        "ru": "Стив Маккарри"
+      },
+      {
+        "en": "Helmut Newton",
+        "ru": "Хельмут Ньютон"
+      }
+    ],
+    "translationEn": "Famous Photographer Style"
+  },
+  "CAMERA_MODEL": {
+    "translation": "Модель камеры",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "Canon EOS R5",
+        "ru": "Canon EOS R5"
+      },
+      {
+        "en": "Sony Alpha 7R IV",
+        "ru": "Sony Alpha 7R IV"
+      },
+      {
+        "en": "Nikon Z9",
+        "ru": "Nikon Z9"
+      },
+      {
+        "en": "Fujifilm GFX 100",
+        "ru": "Fujifilm GFX 100"
+      },
+      {
+        "en": "Hasselblad X2D",
+        "ru": "Hasselblad X2D"
+      },
+      {
+        "en": "Leica SL2",
+        "ru": "Leica SL2"
+      }
+    ],
+    "translationEn": "Camera Model"
+  },
+  "LENS_TYPE": {
+    "translation": "Тип объектива",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "prime lens",
+        "ru": "Фикс-объектив"
+      },
+      {
+        "en": "zoom lens",
+        "ru": "Зум-объектив"
+      },
+      {
+        "en": "macro lens",
+        "ru": "Макро-объектив"
+      },
+      {
+        "en": "telephoto lens",
+        "ru": "Телеобъектив"
+      },
+      {
+        "en": "wide-angle lens",
+        "ru": "Широкоугольный объектив"
+      }
+    ],
+    "translationEn": "Lens Type"
+  },
+  "FOCAL_LENGTH": {
+    "translation": "Фокусное расстояние (мм)",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "24mm (wide angle)",
+        "ru": "24мм (широкоугольный)"
+      },
+      {
+        "en": "35mm (documentary style)",
+        "ru": "35мм (документальный стиль)"
+      },
+      {
+        "en": "50mm (standard)",
+        "ru": "50мм (стандартный)"
+      },
+      {
+        "en": "85mm (portrait)",
+        "ru": "85мм (портретный)"
+      },
+      {
+        "en": "135mm (telephoto portrait)",
+        "ru": "135мм (телепортрет)"
+      },
+      {
+        "en": "200mm+ (telephoto)",
+        "ru": "200мм+ (телеобъектив)"
+      }
+    ],
+    "translationEn": "Focal Length (mm)"
+  },
+  "APERTURE": {
+    "translation": "Диафрагма",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "f/1.2 (ultra-wide, extreme bokeh)",
+        "ru": "f/1.2 (сверхширокая, экстремальное боке)"
+      },
+      {
+        "en": "f/1.4 (very wide, creamy bokeh)",
+        "ru": "f/1.4 (очень широкая, кремовое боке)"
+      },
+      {
+        "en": "f/1.8 (wide, soft background)",
+        "ru": "f/1.8 (широкая, мягкий фон)"
+      },
+      {
+        "en": "f/2.8 (moderate, good separation)",
+        "ru": "f/2.8 (умеренная, хорошее отделение)"
+      },
+      {
+        "en": "f/4 (medium depth)",
+        "ru": "f/4 (средняя глубина)"
+      },
+      {
+        "en": "f/5.6 (balanced)",
+        "ru": "f/5.6 (сбалансированная)"
+      },
+      {
+        "en": "f/8 (sharp, good detail)",
+        "ru": "f/8 (резкая, хорошая детализация)"
+      },
+      {
+        "en": "f/11 (deep focus)",
+        "ru": "f/11 (глубокая резкость)"
+      },
+      {
+        "en": "f/16 (very deep focus)",
+        "ru": "f/16 (очень глубокая резкость)"
+      }
+    ],
+    "translationEn": "Aperture"
+  },
+  "SHUTTER_SPEED": {
+    "translation": "Выдержка",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "1/8000s (ultra-fast, freeze motion)",
+        "ru": "1/8000с (сверхбыстрая, заморозка движения)"
+      },
+      {
+        "en": "1/4000s (very fast action)",
+        "ru": "1/4000с (очень быстрое действие)"
+      },
+      {
+        "en": "1/2000s (fast action)",
+        "ru": "1/2000с (быстрое действие)"
+      },
+      {
+        "en": "1/1000s (sports, wildlife)",
+        "ru": "1/1000с (спорт, дикая природа)"
+      },
+      {
+        "en": "1/500s (moving subjects)",
+        "ru": "1/500с (движущиеся объекты)"
+      },
+      {
+        "en": "1/250s (standard action)",
+        "ru": "1/250с (стандартное действие)"
+      },
+      {
+        "en": "1/125s (handheld portraits)",
+        "ru": "1/125с (портреты с рук)"
+      },
+      {
+        "en": "1/60s (minimum handheld)",
+        "ru": "1/60с (минимум для съемки с рук)"
+      },
+      {
+        "en": "1/30s (slow, slight blur)",
+        "ru": "1/30с (медленная, легкое размытие)"
+      },
+      {
+        "en": "1/15s (motion blur)",
+        "ru": "1/15с (размытие движения)"
+      },
+      {
+        "en": "1s+ (long exposure)",
+        "ru": "1с+ (длинная выдержка)"
+      }
+    ],
+    "translationEn": "Shutter Speed"
+  },
+  "ISO": {
+    "translation": "ISO (чувствительность)",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "ISO 50-100 (bright sunlight, studio)",
+        "ru": "ISO 50-100 (яркий солнечный свет, студия)"
+      },
+      {
+        "en": "ISO 200 (outdoor daylight)",
+        "ru": "ISO 200 (дневной свет на улице)"
+      },
+      {
+        "en": "ISO 400 (cloudy, indoor daylight)",
+        "ru": "ISO 400 (пасмурно, помещение днем)"
+      },
+      {
+        "en": "ISO 800 (indoor, low light)",
+        "ru": "ISO 800 (помещение, слабое освещение)"
+      },
+      {
+        "en": "ISO 1600 (indoor evening)",
+        "ru": "ISO 1600 (помещение вечером)"
+      },
+      {
+        "en": "ISO 3200 (low light, night)",
+        "ru": "ISO 3200 (слабый свет, ночь)"
+      },
+      {
+        "en": "ISO 6400+ (extreme low light)",
+        "ru": "ISO 6400+ (экстремально слабый свет)"
+      }
+    ],
+    "translationEn": "ISO (Sensitivity)"
+  },
+  "LIGHTING_SETUP": {
+    "translation": "Схема освещения",
+    "input": "checkbox",
+    "examples": [
+      {
+        "en": "softbox lighting",
+        "ru": "Софтбокс"
+      },
+      {
+        "en": "Rembrandt lighting",
+        "ru": "Свет Рембрандта"
+      },
+      {
+        "en": "beauty lighting",
+        "ru": "Бьюти-свет"
+      },
+      {
+        "en": "high-key",
+        "ru": "Светлый контрастный свет"
+      },
+      {
+        "en": "low-key",
+        "ru": "Тёмный контраст"
+      },
+      {
+        "en": "butterfly lighting",
+        "ru": "Бабочка"
+      },
+      {
+        "en": "loop lighting",
+        "ru": "Петля"
+      },
+      {
+        "en": "split lighting",
+        "ru": "Разделенный свет"
+      },
+      {
+        "en": "rim lighting",
+        "ru": "Контровой свет"
+      },
+      {
+        "en": "natural window light",
+        "ru": "Естественный свет из окна"
+      }
+    ],
+    "translationEn": "Lighting Setup"
+  },
+  "LIGHT_DIRECTION": {
+    "translation": "Направление света",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "front light (flat)",
+        "ru": "Фронтальный свет (плоский)"
+      },
+      {
+        "en": "45-degree angle",
+        "ru": "Под углом 45 градусов"
+      },
+      {
+        "en": "side lighting (dramatic)",
+        "ru": "Боковой свет (драматичный)"
+      },
+      {
+        "en": "backlight (rim light)",
+        "ru": "Контровой свет"
+      },
+      {
+        "en": "top light",
+        "ru": "Верхний свет"
+      },
+      {
+        "en": "bottom light",
+        "ru": "Нижний свет"
+      }
+    ],
+    "translationEn": "Light Direction"
+  },
+  "LIGHT_TEMPERATURE": {
+    "translation": "Цветовая температура света",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "2700K (warm tungsten)",
+        "ru": "2700K (теплый вольфрамовый)"
+      },
+      {
+        "en": "3200K (tungsten)",
+        "ru": "3200K (вольфрам)"
+      },
+      {
+        "en": "4000K (cool white)",
+        "ru": "4000K (холодный белый)"
+      },
+      {
+        "en": "5600K (daylight)",
+        "ru": "5600K (дневной свет)"
+      },
+      {
+        "en": "6500K (overcast daylight)",
+        "ru": "6500K (пасмурный день)"
+      },
+      {
+        "en": "golden hour (warm)",
+        "ru": "Золотой час (теплый)"
+      },
+      {
+        "en": "blue hour (cool)",
+        "ru": "Синий час (холодный)"
+      }
+    ],
+    "translationEn": "Light Temperature"
+  },
+  "LIGHT_INTENSITY": {
+    "translation": "Интенсивность света",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "soft diffused light",
+        "ru": "Мягкий рассеянный свет"
+      },
+      {
+        "en": "hard direct light",
+        "ru": "Жесткий прямой свет"
+      },
+      {
+        "en": "dramatic high contrast",
+        "ru": "Драматичный высокий контраст"
+      },
+      {
+        "en": "gentle low contrast",
+        "ru": "Мягкий низкий контраст"
+      },
+      {
+        "en": "balanced medium contrast",
+        "ru": "Сбалансированный средний контраст"
+      }
+    ],
+    "translationEn": "Light Intensity"
+  },
+  "CAMERA_ANGLE": {
+    "translation": "Угол камеры",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "eye-level",
+        "ru": "Уровень глаз"
+      },
+      {
+        "en": "low angle (from below)",
+        "ru": "Снизу"
+      },
+      {
+        "en": "high angle (from above)",
+        "ru": "Сверху"
+      },
+      {
+        "en": "bird's eye view",
+        "ru": "С высоты птичьего полета"
+      },
+      {
+        "en": "worm's eye view",
+        "ru": "С уровня земли"
+      },
+      {
+        "en": "dutch angle (tilted)",
+        "ru": "Голландский угол (наклон)"
+      }
+    ],
+    "translationEn": "Camera Angle"
+  },
+  "SHOT_TYPE": {
+    "translation": "Тип кадра",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "extreme close-up (ECU)",
+        "ru": "Сверхкрупный план"
+      },
+      {
+        "en": "close-up (CU)",
+        "ru": "Крупный план"
+      },
+      {
+        "en": "medium close-up (MCU)",
+        "ru": "Средний крупный план"
+      },
+      {
+        "en": "medium shot (MS)",
+        "ru": "Средний план"
+      },
+      {
+        "en": "medium full shot",
+        "ru": "Средний общий план"
+      },
+      {
+        "en": "full body shot",
+        "ru": "В полный рост"
+      },
+      {
+        "en": "long shot (LS)",
+        "ru": "Общий план"
+      },
+      {
+        "en": "extreme long shot (ELS)",
+        "ru": "Дальний план"
+      }
+    ],
+    "translationEn": "Shot Type"
+  },
+  "DEPTH_OF_FIELD": {
+    "translation": "Глубина резкости",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "ultra-shallow (extreme bokeh)",
+        "ru": "Сверхмалая (экстремальное боке)"
+      },
+      {
+        "en": "shallow (creamy bokeh)",
+        "ru": "Малая (кремовое боке)"
+      },
+      {
+        "en": "medium (balanced)",
+        "ru": "Средняя (сбалансированная)"
+      },
+      {
+        "en": "deep (full sharpness)",
+        "ru": "Большая (полная резкость)"
+      }
+    ],
+    "translationEn": "Depth of Field"
+  },
+  "MODEL_ANGLE": {
+    "translation": "Ракурс модели",
+    "input": "checkbox",
+    "examples": [
+      {
+        "en": "front view (full face)",
+        "ru": "Анфас (лицом прямо в камеру)"
+      },
+      {
+        "en": "profile view (side view)",
+        "ru": "Профиль (боковой ракурс)"
+      },
+      {
+        "en": "three-quarter view (3/4)",
+        "ru": "Три четверти"
+      },
+      {
+        "en": "two-thirds view (2/3)",
+        "ru": "Две трети"
+      },
+      {
+        "en": "over-the-shoulder view",
+        "ru": "Через плечо"
+      },
+      {
+        "en": "back view",
+        "ru": "Со спины"
+      },
+      {
+        "en": "chin-down angle",
+        "ru": "С наклоном головы вниз"
+      },
+      {
+        "en": "chin-up angle",
+        "ru": "С наклоном головы вверх"
+      }
+    ],
+    "translationEn": "Model Angle"
+  },
+  "POSE": {
+    "translation": "Поза",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "standing pose",
+        "ru": "Стоит"
+      },
+      {
+        "en": "sitting pose",
+        "ru": "Сидит"
+      },
+      {
+        "en": "lying pose",
+        "ru": "Лежит"
+      },
+      {
+        "en": "walking pose",
+        "ru": "Идет"
+      },
+      {
+        "en": "running pose",
+        "ru": "Бежит"
+      },
+      {
+        "en": "kneeling pose",
+        "ru": "На коленях"
+      },
+      {
+        "en": "cross-legged sitting",
+        "ru": "Сидит по-турецки"
+      },
+      {
+        "en": "reclining pose",
+        "ru": "Полулежа"
+      },
+      {
+        "en": "jumping pose",
+        "ru": "Прыгает"
+      },
+      {
+        "en": "dancing pose",
+        "ru": "Танцует"
+      },
+      {
+        "en": "posing with hands on hips",
+        "ru": "С руками на бедрах"
+      },
+      {
+        "en": "posing with crossed arms",
+        "ru": "Со скрещенными руками на груди"
+      },
+      {
+        "en": "posing with hand on chin",
+        "ru": "С рукой у подбородка"
+      },
+      {
+        "en": "lying on stomach with chin on hands",
+        "ru": "Лежит на животе, подбородок на руках"
+      },
+      {
+        "en": "leaning against wall",
+        "ru": "Опирается на стену"
+      },
+      {
+        "en": "dynamic movement",
+        "ru": "Динамичное движение"
+      }
+    ],
+    "translationEn": "Pose"
+  },
+  "FACIAL_EXPRESSION": {
+    "translation": "Выражение лица",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "serious/confident",
+        "ru": "Серьезное/уверенное"
+      },
+      {
+        "en": "genuine smile",
+        "ru": "Искренняя улыбка"
+      },
+      {
+        "en": "subtle smile",
+        "ru": "Легкая улыбка"
+      },
+      {
+        "en": "contemplative/thoughtful",
+        "ru": "Задумчивое"
+      },
+      {
+        "en": "laughing",
+        "ru": "Смеющееся"
+      },
+      {
+        "en": "mysterious",
+        "ru": "Таинственное"
+      },
+      {
+        "en": "intense gaze",
+        "ru": "Интенсивный взгляд"
+      },
+      {
+        "en": "relaxed/natural",
+        "ru": "Расслабленное/естественное"
+      }
+    ],
+    "translationEn": "Facial Expression"
+  },
+  "EYE_CONTACT": {
+    "translation": "Направление взгляда",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "direct eye contact with camera",
+        "ru": "Прямой взгляд в камеру"
+      },
+      {
+        "en": "looking away (left/right)",
+        "ru": "Смотрит в сторону (влево/вправо)"
+      },
+      {
+        "en": "looking up",
+        "ru": "Смотрит вверх"
+      },
+      {
+        "en": "looking down",
+        "ru": "Смотрит вниз"
+      },
+      {
+        "en": "eyes closed",
+        "ru": "Глаза закрыты"
+      },
+      {
+        "en": "over-the-shoulder glance",
+        "ru": "Взгляд через плечо"
+      }
+    ],
+    "translationEn": "Eye Contact"
+  },
+  "MAKEUP_STYLE": {
+    "translation": "Стиль макияжа",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "natural/minimal",
+        "ru": "Естественный/минимальный"
+      },
+      {
+        "en": "dramatic/editorial",
+        "ru": "Драматичный/редакционный"
+      },
+      {
+        "en": "glamour/evening",
+        "ru": "Гламурный/вечерний"
+      },
+      {
+        "en": "bold/artistic",
+        "ru": "Яркий/художественный"
+      },
+      {
+        "en": "no makeup",
+        "ru": "Без макияжа"
+      },
+      {
+        "en": "dewy/glowing",
+        "ru": "Влажный/сияющий"
+      },
+      {
+        "en": "matte/sophisticated",
+        "ru": "Матовый/изысканный"
+      }
+    ],
+    "translationEn": "Makeup Style"
+  },
+  "HAIR_STYLE": {
+    "translation": "Прическа",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "loose flowing hair",
+        "ru": "Распущенные волосы"
+      },
+      {
+        "en": "sleek straight hair",
+        "ru": "Гладкие прямые волосы"
+      },
+      {
+        "en": "wavy/curly hair",
+        "ru": "Волнистые/кудрявые волосы"
+      },
+      {
+        "en": "updo/bun",
+        "ru": "Собранные волосы/пучок"
+      },
+      {
+        "en": "ponytail",
+        "ru": "Хвост"
+      },
+      {
+        "en": "braided",
+        "ru": "Заплетенные"
+      },
+      {
+        "en": "short styled",
+        "ru": "Короткая укладка"
+      },
+      {
+        "en": "messy/textured",
+        "ru": "Небрежные/текстурированные"
+      },
+      {
+        "en": "slicked back",
+        "ru": "Зачесанные назад"
+      }
+    ],
+    "translationEn": "Hair Style"
+  },
+  "OUTFIT_STYLE": {
+    "translation": "Стиль одежды",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "casual",
+        "ru": "Повседневный"
+      },
+      {
+        "en": "formal/business",
+        "ru": "Формальный/деловой"
+      },
+      {
+        "en": "evening/cocktail",
+        "ru": "Вечерний/коктейльный"
+      },
+      {
+        "en": "sportswear/athletic",
+        "ru": "Спортивный"
+      },
+      {
+        "en": "avant-garde/experimental",
+        "ru": "Авангард/экспериментальный"
+      },
+      {
+        "en": "streetwear/urban",
+        "ru": "Уличный/городской"
+      },
+      {
+        "en": "bohemian/boho",
+        "ru": "Богемный/бохо"
+      },
+      {
+        "en": "minimalist",
+        "ru": "Минималистичный"
+      },
+      {
+        "en": "haute couture",
+        "ru": "Высокая мода"
+      },
+      {
+        "en": "vintage/retro",
+        "ru": "Винтаж/ретро"
+      }
+    ],
+    "translationEn": "Outfit Style"
+  },
+  "OUTFIT_MATERIAL": {
+    "translation": "Материал одежды",
+    "input": "checkbox",
+    "examples": [
+      {
+        "en": "silk",
+        "ru": "Шелк"
+      },
+      {
+        "en": "leather",
+        "ru": "Кожа"
+      },
+      {
+        "en": "denim",
+        "ru": "Деним"
+      },
+      {
+        "en": "wool",
+        "ru": "Шерсть"
+      },
+      {
+        "en": "cotton",
+        "ru": "Хлопок"
+      },
+      {
+        "en": "velvet",
+        "ru": "Бархат"
+      },
+      {
+        "en": "linen",
+        "ru": "Лен"
+      },
+      {
+        "en": "chiffon",
+        "ru": "Шифон"
+      },
+      {
+        "en": "lace",
+        "ru": "Кружево"
+      },
+      {
+        "en": "satin",
+        "ru": "Атлас"
+      }
+    ],
+    "translationEn": "Outfit Material"
+  },
+  "OUTFIT_FIT": {
+    "translation": "Крой одежды",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "oversized",
+        "ru": "Оверсайз"
+      },
+      {
+        "en": "fitted/tailored",
+        "ru": "Приталенный/скроенный"
+      },
+      {
+        "en": "loose/relaxed",
+        "ru": "Свободный/расслабленный"
+      },
+      {
+        "en": "tight/form-fitting",
+        "ru": "Обтягивающий"
+      },
+      {
+        "en": "structured",
+        "ru": "Структурированный"
+      },
+      {
+        "en": "flowing/draped",
+        "ru": "Струящийся/драпированный"
+      }
+    ],
+    "translationEn": "Outfit Fit"
+  },
+  "COLOR_PALETTE": {
+    "translation": "Цветовая палитра",
+    "input": "colorPicker",
+    "examples": [
+      {
+        "en": "monochromatic",
+        "ru": "Монохромная"
+      },
+      {
+        "en": "complementary colors",
+        "ru": "Дополнительные цвета"
+      },
+      {
+        "en": "analogous colors",
+        "ru": "Аналогичные цвета"
+      },
+      {
+        "en": "warm tones",
+        "ru": "Теплые тона"
+      },
+      {
+        "en": "cool tones",
+        "ru": "Холодные тона"
+      },
+      {
+        "en": "pastel palette",
+        "ru": "Пастельная палитра"
+      },
+      {
+        "en": "vibrant/bold colors",
+        "ru": "Яркие/насыщенные цвета"
+      },
+      {
+        "en": "earth tones",
+        "ru": "Землистые тона"
+      },
+      {
+        "en": "neutral palette",
+        "ru": "Нейтральная палитра"
+      }
+    ],
+    "translationEn": "Color Palette"
+  },
+  "HEADWEAR": {
+    "translation": "Головной убор",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "wide-brimmed hat",
+        "ru": "Широкополая шляпа"
+      },
+      {
+        "en": "fedora",
+        "ru": "Федора"
+      },
+      {
+        "en": "baseball cap",
+        "ru": "Бейсболка"
+      },
+      {
+        "en": "beanie",
+        "ru": "Бини"
+      },
+      {
+        "en": "beret",
+        "ru": "Берет"
+      },
+      {
+        "en": "turban",
+        "ru": "Тюрбан"
+      },
+      {
+        "en": "none",
+        "ru": "Нет"
+      }
+    ],
+    "translationEn": "Headwear"
+  },
+  "TOP": {
+    "translation": "Верх",
+    "input": "checkbox",
+    "examples": [
+      {
+        "en": "button-up shirt",
+        "ru": "Рубашка на пуговицах"
+      },
+      {
+        "en": "t-shirt",
+        "ru": "Футболка"
+      },
+      {
+        "en": "blouse",
+        "ru": "Блузка"
+      },
+      {
+        "en": "blazer/jacket",
+        "ru": "Блейзер/пиджак"
+      },
+      {
+        "en": "coat/overcoat",
+        "ru": "Пальто"
+      },
+      {
+        "en": "sweater/knit",
+        "ru": "Свитер/вязаный"
+      },
+      {
+        "en": "tank top",
+        "ru": "Майка"
+      },
+      {
+        "en": "dress (full outfit)",
+        "ru": "Платье (полный наряд)"
+      },
+      {
+        "en": "suit jacket",
+        "ru": "Пиджак от костюма"
+      },
+      {
+        "en": "leather jacket",
+        "ru": "Кожаная куртка"
+      }
+    ],
+    "translationEn": "Top"
+  },
+  "BOTTOM": {
+    "translation": "Низ",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "dress pants/trousers",
+        "ru": "Классические брюки"
+      },
+      {
+        "en": "jeans",
+        "ru": "Джинсы"
+      },
+      {
+        "en": "skirt (pencil/A-line/midi)",
+        "ru": "Юбка (карандаш/А-силуэт/миди)"
+      },
+      {
+        "en": "shorts",
+        "ru": "Шорты"
+      },
+      {
+        "en": "suit trousers",
+        "ru": "Костюмные штаны"
+      },
+      {
+        "en": "palazzo pants",
+        "ru": "Широкие брюки"
+      },
+      {
+        "en": "leather pants",
+        "ru": "Кожаные брюки"
+      },
+      {
+        "en": "leggings",
+        "ru": "Леггинсы"
+      }
+    ],
+    "translationEn": "Bottom"
+  },
+  "FOOTWEAR": {
+    "translation": "Обувь",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "sneakers/trainers",
+        "ru": "Кроссовки"
+      },
+      {
+        "en": "ankle boots",
+        "ru": "Ботильоны"
+      },
+      {
+        "en": "knee-high boots",
+        "ru": "Сапоги до колена"
+      },
+      {
+        "en": "oxford shoes",
+        "ru": "Оксфорды"
+      },
+      {
+        "en": "loafers",
+        "ru": "Лоферы"
+      },
+      {
+        "en": "stiletto heels",
+        "ru": "Шпильки"
+      },
+      {
+        "en": "platform heels",
+        "ru": "Туфли на платформе"
+      },
+      {
+        "en": "sandals",
+        "ru": "Сандалии"
+      },
+      {
+        "en": "bare feet",
+        "ru": "Босиком"
+      }
+    ],
+    "translationEn": "Footwear"
+  },
+  "ACCESSORIES": {
+    "translation": "Аксессуары",
+    "input": "checkbox",
+    "examples": [
+      {
+        "en": "luxury watch",
+        "ru": "Роскошные часы"
+      },
+      {
+        "en": "statement jewelry",
+        "ru": "Заметные украшения"
+      },
+      {
+        "en": "delicate jewelry",
+        "ru": "Изящные украшения"
+      },
+      {
+        "en": "silk scarf",
+        "ru": "Шелковый шарф"
+      },
+      {
+        "en": "leather belt",
+        "ru": "Кожаный ремень"
+      },
+      {
+        "en": "sunglasses",
+        "ru": "Солнцезащитные очки"
+      },
+      {
+        "en": "optical glasses",
+        "ru": "Оптические очки"
+      },
+      {
+        "en": "handbag/clutch",
+        "ru": "Сумка/клатч"
+      },
+      {
+        "en": "tie/bowtie",
+        "ru": "Галстук/бабочка"
+      },
+      {
+        "en": "gloves",
+        "ru": "Перчатки"
+      }
+    ],
+    "translationEn": "Accessories"
+  },
+  "COMPOSITION_RULE": {
+    "translation": "Правило композиции",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "rule of thirds",
+        "ru": "Правило третей"
+      },
+      {
+        "en": "golden ratio",
+        "ru": "Золотое сечение"
+      },
+      {
+        "en": "centered composition",
+        "ru": "Центральная композиция"
+      },
+      {
+        "en": "symmetry",
+        "ru": "Симметрия"
+      },
+      {
+        "en": "leading lines",
+        "ru": "Направляющие линии"
+      },
+      {
+        "en": "frame within frame",
+        "ru": "Кадр в кадре"
+      },
+      {
+        "en": "negative space",
+        "ru": "Негативное пространство"
+      },
+      {
+        "en": "diagonal composition",
+        "ru": "Диагональная композиция"
+      },
+      {
+        "en": "triangular composition",
+        "ru": "Треугольная композиция"
+      }
+    ],
+    "translationEn": "Composition Rule"
+  },
+  "FRAMING": {
+    "translation": "Кадрирование",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "tight crop",
+        "ru": "Плотный кадр"
+      },
+      {
+        "en": "loose crop with negative space",
+        "ru": "Свободный кадр с пространством"
+      },
+      {
+        "en": "environmental context",
+        "ru": "Контекст окружения"
+      },
+      {
+        "en": "natural framing (doorways, windows)",
+        "ru": "Естественное обрамление (двери, окна)"
+      },
+      {
+        "en": "minimalist framing",
+        "ru": "Минималистичное кадрирование"
+      }
+    ],
+    "translationEn": "Framing"
+  },
+  "LOCATION_TYPE": {
+    "translation": "Тип локации",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "professional studio",
+        "ru": "Профессиональная студия"
+      },
+      {
+        "en": "urban street",
+        "ru": "Городская улица"
+      },
+      {
+        "en": "city park",
+        "ru": "Городской парк"
+      },
+      {
+        "en": "modern architecture",
+        "ru": "Современная архитектура"
+      },
+      {
+        "en": "industrial warehouse",
+        "ru": "Индустриальный склад"
+      },
+      {
+        "en": "rooftop",
+        "ru": "Крыша здания"
+      },
+      {
+        "en": "beach/coastline",
+        "ru": "Пляж/побережье"
+      },
+      {
+        "en": "mountains/highlands",
+        "ru": "Горы/высокогорье"
+      },
+      {
+        "en": "forest/woods",
+        "ru": "Лес"
+      },
+      {
+        "en": "desert",
+        "ru": "Пустыня"
+      },
+      {
+        "en": "luxury interior",
+        "ru": "Роскошный интерьер"
+      },
+      {
+        "en": "minimalist interior",
+        "ru": "Минималистичный интерьер"
+      }
+    ],
+    "translationEn": "Location Type"
+  },
+  "COUNTRY": {
+    "translation": "Страна",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "Russia",
+        "ru": "Россия"
+      },
+      {
+        "en": "USA",
+        "ru": "США"
+      },
+      {
+        "en": "Japan",
+        "ru": "Япония"
+      },
+      {
+        "en": "France",
+        "ru": "Франция"
+      },
+      {
+        "en": "Italy",
+        "ru": "Италия"
+      },
+      {
+        "en": "United Kingdom",
+        "ru": "Великобритания"
+      },
+      {
+        "en": "Iceland",
+        "ru": "Исландия"
+      },
+      {
+        "en": "Morocco",
+        "ru": "Марокко"
+      },
+      {
+        "en": "Thailand",
+        "ru": "Таиланд"
+      }
+    ],
+    "translationEn": "Country"
+  },
+  "SEASON": {
+    "translation": "Время года",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "spring (blooming)",
+        "ru": "Весна (цветение)"
+      },
+      {
+        "en": "summer (lush)",
+        "ru": "Лето (пышная зелень)"
+      },
+      {
+        "en": "autumn (fall colors)",
+        "ru": "Осень (осенние краски)"
+      },
+      {
+        "en": "winter (snow/frost)",
+        "ru": "Зима (снег/мороз)"
+      }
+    ],
+    "translationEn": "Season"
+  },
+  "TIME_OF_DAY": {
+    "translation": "Время суток",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "early morning (soft light)",
+        "ru": "Раннее утро (мягкий свет)"
+      },
+      {
+        "en": "golden hour (sunrise)",
+        "ru": "Золотой час (восход)"
+      },
+      {
+        "en": "midday (harsh light)",
+        "ru": "Полдень (жесткий свет)"
+      },
+      {
+        "en": "afternoon (warm light)",
+        "ru": "Послеобеденное время (теплый свет)"
+      },
+      {
+        "en": "golden hour (sunset)",
+        "ru": "Золотой час (закат)"
+      },
+      {
+        "en": "blue hour (twilight)",
+        "ru": "Синий час (сумерки)"
+      },
+      {
+        "en": "night (artificial light)",
+        "ru": "Ночь (искусственное освещение)"
+      }
+    ],
+    "translationEn": "Time of Day"
+  },
+  "WEATHER": {
+    "translation": "Погода",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "bright sunny",
+        "ru": "Яркое солнце"
+      },
+      {
+        "en": "partly cloudy",
+        "ru": "Переменная облачность"
+      },
+      {
+        "en": "overcast (soft diffused light)",
+        "ru": "Пасмурно (мягкий рассеянный свет)"
+      },
+      {
+        "en": "light rain/drizzle",
+        "ru": "Легкий дождь/морось"
+      },
+      {
+        "en": "heavy rain",
+        "ru": "Сильный дождь"
+      },
+      {
+        "en": "fog/mist (atmospheric)",
+        "ru": "Туман/дымка (атмосферно)"
+      },
+      {
+        "en": "snow/snowing",
+        "ru": "Снег/снегопад"
+      },
+      {
+        "en": "windy",
+        "ru": "Ветрено"
+      }
+    ],
+    "translationEn": "Weather"
+  },
+  "BACKGROUND_TYPE": {
+    "translation": "Фон",
+    "input": "manualWithColor",
+    "examples": [
+      {
+        "en": "seamless paper backdrop",
+        "ru": "Бесшовный бумажный фон"
+      },
+      {
+        "en": "textured wall (brick/concrete)",
+        "ru": "Текстурная стена (кирпич/бетон)"
+      },
+      {
+        "en": "gradient backdrop",
+        "ru": "Градиентный фон"
+      },
+      {
+        "en": "cityscape/skyline",
+        "ru": "Городской пейзаж/силуэт"
+      },
+      {
+        "en": "natural landscape",
+        "ru": "Природный ландшафт"
+      },
+      {
+        "en": "bokeh lights",
+        "ru": "Боке-огни"
+      },
+      {
+        "en": "minimalist clean",
+        "ru": "Минималистичный чистый"
+      },
+      {
+        "en": "busy urban environment",
+        "ru": "Оживленная городская среда"
+      },
+      {
+        "en": "out-of-focus nature",
+        "ru": "Размытая природа"
+      }
+    ],
+    "translationEn": "Background"
+  },
+  "MOOD_ATMOSPHERE": {
+    "translation": "Настроение/Атмосфера",
+    "input": "checkbox",
+    "examples": [
+      {
+        "en": "professional/corporate",
+        "ru": "Профессиональное/корпоративное"
+      },
+      {
+        "en": "dramatic/moody",
+        "ru": "Драматичное/настроенческое"
+      },
+      {
+        "en": "elegant/sophisticated",
+        "ru": "Элегантное/изысканное"
+      },
+      {
+        "en": "joyful/energetic",
+        "ru": "Радостное/энергичное"
+      },
+      {
+        "en": "romantic/dreamy",
+        "ru": "Романтичное/мечтательное"
+      },
+      {
+        "en": "cinematic/storytelling",
+        "ru": "Киношное/повествовательное"
+      },
+      {
+        "en": "edgy/bold",
+        "ru": "Резкое/смелое"
+      },
+      {
+        "en": "serene/peaceful",
+        "ru": "Безмятежное/спокойное"
+      },
+      {
+        "en": "mysterious/enigmatic",
+        "ru": "Таинственное/загадочное"
+      },
+      {
+        "en": "playful/casual",
+        "ru": "Игривое/непринужденное"
+      }
+    ],
+    "translationEn": "Mood/Atmosphere"
+  },
+  "POST_PROCESSING": {
+    "translation": "Обработка фото",
+    "input": "checkbox",
+    "examples": [
+      {
+        "en": "realistic/natural",
+        "ru": "Реалистичная/естественная"
+      },
+      {
+        "en": "matte finish",
+        "ru": "Матовая отделка"
+      },
+      {
+        "en": "cinematic color grade",
+        "ru": "Киношная цветокоррекция"
+      },
+      {
+        "en": "black & white (high contrast)",
+        "ru": "Чёрно-белая (высокий контраст)"
+      },
+      {
+        "en": "black & white (soft)",
+        "ru": "Чёрно-белая (мягкая)"
+      },
+      {
+        "en": "vintage film emulation",
+        "ru": "Эмуляция винтажной пленки"
+      },
+      {
+        "en": "teal and orange grade",
+        "ru": "Сине-оранжевая коррекция"
+      },
+      {
+        "en": "faded/desaturated",
+        "ru": "Выцветшая/ненасыщенная"
+      },
+      {
+        "en": "vibrant/saturated",
+        "ru": "Яркая/насыщенная"
+      },
+      {
+        "en": "HDR effect",
+        "ru": "HDR-эффект"
+      },
+      {
+        "en": "film grain texture",
+        "ru": "Текстура пленочного зерна"
+      },
+      {
+        "en": "Kodak Portra 400 look",
+        "ru": "Стиль Kodak Portra 400"
+      },
+      {
+        "en": "Fuji Velvia look",
+        "ru": "Стиль Fuji Velvia"
+      },
+      {
+        "en": "cross-processed",
+        "ru": "Кросс-процесс"
+      },
+      {
+        "en": "bleach bypass",
+        "ru": "Отбеливание"
+      }
+    ],
+    "translationEn": "Post-Processing"
+  },
+  "SKIN_RETOUCHING": {
+    "translation": "Ретушь кожи",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "natural/minimal",
+        "ru": "Естественная/минимальная"
+      },
+      {
+        "en": "moderate/balanced",
+        "ru": "Умеренная/сбалансированная"
+      },
+      {
+        "en": "heavy/editorial",
+        "ru": "Сильная/редакционная"
+      },
+      {
+        "en": "no retouching",
+        "ru": "Без ретуши"
+      }
+    ],
+    "translationEn": "Skin Retouching"
+  },
+  "IMAGE_QUALITY": {
+    "translation": "Качество изображения",
+    "input": "checkbox",
+    "examples": [
+      {
+        "en": "sharp focus",
+        "ru": "Резкий фокус"
+      },
+      {
+        "en": "hyperrealistic details",
+        "ru": "Гиперреалистичные детали"
+      },
+      {
+        "en": "professional grade",
+        "ru": "Профессиональное качество"
+      },
+      {
+        "en": "8K resolution",
+        "ru": "Разрешение 8K"
+      },
+      {
+        "en": "high dynamic range",
+        "ru": "Высокий динамический диапазон"
+      },
+      {
+        "en": "crisp details",
+        "ru": "Четкие детали"
+      }
+    ],
+    "translationEn": "Image Quality"
+  },
+  "RESOLUTION": {
+    "translation": "Разрешение",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "4K (3840x2160)",
+        "ru": "4K (3840x2160)"
+      },
+      {
+        "en": "8K (7680x4320)",
+        "ru": "8K (7680x4320)"
+      },
+      {
+        "en": "high resolution",
+        "ru": "Высокое разрешение"
+      },
+      {
+        "en": "print quality (300 DPI)",
+        "ru": "Печатное качество (300 DPI)"
+      }
+    ],
+    "translationEn": "Resolution"
+  },
+  "ASPECT_RATIO": {
+    "translation": "Соотношение сторон",
+    "input": "manual",
+    "examples": [
+      {
+        "en": "1:1 (square, Instagram)",
+        "ru": "1:1 (квадрат, Instagram)"
+      },
+      {
+        "en": "4:5 (portrait, Instagram)",
+        "ru": "4:5 (портрет, Instagram)"
+      },
+      {
+        "en": "3:2 (classic 35mm)",
+        "ru": "3:2 (классический 35мм)"
+      },
+      {
+        "en": "16:9 (landscape, cinematic)",
+        "ru": "16:9 (пейзаж, киношный)"
+      },
+      {
+        "en": "2.39:1 (anamorphic, ultra-wide)",
+        "ru": "2.39:1 (анаморфный, сверхширокий)"
+      },
+      {
+        "en": "9:16 (vertical, stories)",
+        "ru": "9:16 (вертикальный, stories)"
+      }
+    ],
+    "translationEn": "Aspect Ratio"
+  },
+  "NEGATIVE_PROMPTS": {
+    "translation": "Что исключить",
+    "input": "checkbox",
+    "examples": [
+      {
+        "en": "blurry/out of focus",
+        "ru": "Размытое/не в фокусе"
+      },
+      {
+        "en": "distorted proportions",
+        "ru": "Искаженные пропорции"
+      },
+      {
+        "en": "unrealistic anatomy",
+        "ru": "Нереалистичная анатомия"
+      },
+      {
+        "en": "bad lighting",
+        "ru": "Плохое освещение"
+      },
+      {
+        "en": "noise/grain (unwanted)",
+        "ru": "Шум/зерно (нежелательное)"
+      },
+      {
+        "en": "artifacts/glitches",
+        "ru": "Артефакты/глитчи"
+      },
+      {
+        "en": "oversaturation",
+        "ru": "Пересыщенность"
+      },
+      {
+        "en": "underexposed/overexposed",
+        "ru": "Недоэкспонировано/переэкспонировано"
+      },
+      {
+        "en": "awkward poses",
+        "ru": "Неловкие позы"
+      },
+      {
+        "en": "cluttered background",
+        "ru": "Загроможденный фон"
+      }
+    ],
+    "translationEn": "Exclude"
+  }
+}

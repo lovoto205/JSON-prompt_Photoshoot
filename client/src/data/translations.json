@@ -1,0 +1,151 @@
+{
+  "ru": {
+    "header": {
+      "title": "JSON-промпт",
+      "subtitle": "для фотосессий",
+      "appName": "Nano Banana",
+      "help": "Помощь"
+    },
+    "navigation": {
+      "model": "Модель",
+      "camera": "Камера",
+      "lighting": "Освещение",
+      "style": "Стиль",
+      "clothing": "Одежда",
+      "location": "Локация",
+      "atmosphere": "Атмосфера",
+      "quality": "Качество"
+    },
+    "buttons": {
+      "clearAll": "Очистить всё",
+      "showPrompt": "Показать JSON-промпт",
+      "close": "Закрыть",
+      "copy": "Копировать",
+      "copied": "Скопировано",
+      "understand": "Понятно",
+      "cancel": "Отмена",
+      "select": "Выбрать",
+      "other": "Другое...",
+      "assignColor": "Назначить цвет",
+      "selectColor": "Выбрать цвет",
+      "no": "Нет",
+      "fromList": "Из списка",
+      "donate": "Отблагодарить"
+    },
+    "donation": {
+      "text": "Буду благодарен за донат 300 ₽ на кофе с круассаном ☕🥐<br />Это мотивирует делать новые промпты на другие темы!",
+      "modalTitle": "Поддержать проект"
+    },
+    "modal": {
+      "promptTitle": "Ваш JSON-промпт",
+      "helpTitle": "Помощь",
+      "aboutApp": "О приложении",
+      "aboutAppText": "Этот <span style='color: #ffaa00'>JSON-промпт</span> идеально подходит для пользователей Nano Banana, которые загружают своё фото и хотят получить реалистичные профессиональные кадры — как после фотосессии у фотографа. Промпт совместим и с другими нейросетями, создающими изображения, но особенно хорошо раскрывает себя при работе с моделью от Google — Nano Banana, обеспечивая естественные портреты с точным сохранением лица и стилистикой студийной съемки.",
+      "howToUse": "Как пользоваться?",
+      "howToUseSteps": [
+        "<strong>Выберите категорию</strong> — используйте навигацию по шагам вверху страницы (Модель, Камера, Освещение, Стиль и т.д.)",
+        "<strong>Заполните параметры</strong> — для каждой категории выберите нужные параметры из выпадающих списков или введите свои значения",
+        "<strong>Используйте автоперевод</strong> — все русские значения автоматически переводятся на английский язык при формировании промпта",
+        "<strong>Получите результат</strong> — нажмите кнопку \"Показать JSON-промпт\" внизу страницы",
+        "<strong>Скопируйте промпт</strong> — используйте кнопку \"Копировать\" в модальном окне для использования в вашей нейросети"
+      ],
+      "categories": "Категории параметров",
+      "categoriesList": [
+        "<strong>Модель</strong> — характеристики модели (пол, возраст, телосложение, поза, выражение лица)",
+        "<strong>Камера</strong> — технические параметры съемки (модель камеры, объектив, диафрагма, ISO)",
+        "<strong>Освещение</strong> — схемы и характеристики света",
+        "<strong>Стиль</strong> — художественное направление, композиция, кадрирование",
+        "<strong>Одежда</strong> — стиль, материалы, цветовая палитра, аксессуары",
+        "<strong>Локация</strong> — место съемки, погода, время суток, фон",
+        "<strong>Атмосфера</strong> — настроение и стиль обработки фотографии",
+        "<strong>Качество</strong> — технические параметры итогового изображения"
+      ],
+      "tips": "Полезные советы",
+      "tipsList": [
+        "Не обязательно заполнять все параметры — выбирайте только те, что важны для вашей задачи",
+        "Используйте кнопку \"Очистить всё\" для быстрого сброса всех параметров",
+        "Для полей с опцией \"Другое...\" вы можете вводить свои значения",
+        "Цветовая палитра позволяет выбрать до 5 цветов для одежды"
+      ]
+    },
+    "placeholders": {
+      "enterValue": "Введите значение...",
+      "colorPlaceholder": "#000000"
+    },
+    "selected": "Выбрано"
+  },
+  "en": {
+    "header": {
+      "title": "JSON-prompt",
+      "subtitle": "for photoshoots",
+      "appName": "Nano Banana",
+      "help": "Help"
+    },
+    "navigation": {
+      "model": "Model",
+      "camera": "Camera",
+      "lighting": "Lighting",
+      "style": "Style",
+      "clothing": "Clothing",
+      "location": "Location",
+      "atmosphere": "Atmosphere",
+      "quality": "Quality"
+    },
+    "buttons": {
+      "clearAll": "Clear all",
+      "showPrompt": "Show JSON-prompt",
+      "close": "Close",
+      "copy": "Copy",
+      "copied": "Copied",
+      "understand": "Got it",
+      "cancel": "Cancel",
+      "select": "Select",
+      "other": "Other...",
+      "assignColor": "Assign color",
+      "selectColor": "Select color",
+      "no": "None",
+      "fromList": "From list",
+      "donate": "Say thanks"
+    },
+    "donation": {
+      "text": "I would appreciate a donation of $5 for a coffee and croissant ☕🥐<br />It motivates me to create new prompts on other topics!"
+    },
+    "modal": {
+      "promptTitle": "Your JSON-prompt",
+      "helpTitle": "Help",
+      "aboutApp": "About the app",
+      "aboutAppText": "This <span style='color: #ffaa00'>JSON-prompt</span> is ideal for Nano Banana users who upload their photo and want realistic professional shots — like after a photoshoot with a photographer. The prompt is compatible with other image-generating neural networks, but works especially well with Google's model — Nano Banana, providing natural portraits with accurate face preservation and studio photography styling.",
+      "howToUse": "How to use?",
+      "howToUseSteps": [
+        "<strong>Choose a category</strong> — use the step navigation at the top of the page (Model, Camera, Lighting, Style, etc.)",
+        "<strong>Fill in parameters</strong> — for each category, select the required parameters from dropdown lists or enter your own values",
+        "<strong>Use auto-translation</strong> — all values are automatically translated to English when generating the prompt",
+        "<strong>Get the result</strong> — click the \"Show JSON-prompt\" button at the bottom of the page",
+        "<strong>Copy the prompt</strong> — use the \"Copy\" button in the modal window to use it in your neural network"
+      ],
+      "categories": "Parameter categories",
+      "categoriesList": [
+        "<strong>Model</strong> — model characteristics (gender, age, body type, pose, facial expression)",
+        "<strong>Camera</strong> — technical shooting parameters (camera model, lens, aperture, ISO)",
+        "<strong>Lighting</strong> — light schemes and characteristics",
+        "<strong>Style</strong> — artistic direction, composition, framing",
+        "<strong>Clothing</strong> — style, materials, color palette, accessories",
+        "<strong>Location</strong> — shooting location, weather, time of day, background",
+        "<strong>Atmosphere</strong> — mood and photo processing style",
+        "<strong>Quality</strong> — technical parameters of the final image"
+      ],
+      "tips": "Useful tips",
+      "tipsList": [
+        "You don't have to fill in all parameters — choose only those that are important for your task",
+        "Use the \"Clear all\" button to quickly reset all parameters",
+        "For fields with \"Other...\" option you can enter your own values",
+        "Color palette allows you to select up to 5 colors for clothing"
+      ]
+    },
+    "placeholders": {
+      "enterValue": "Enter value...",
+      "colorPlaceholder": "#000000"
+    },
+    "selected": "Selected"
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "GENDER": {
+    "translation": "Пол",
+    "input": "select",
+    "examples": [
+      { "en": "man", "ru": "Мужчина" },
+      { "en": "woman", "ru": "Женщина" }
+    ]
+  },
+  "AGE": {
+    "translation": "Возраст",
+    "input": "text",
+    "examples": []
+  },
+  "WEIGHT_KG": {
+    "translation": "Вес (кг)",
+    "input": "text",
+    "unit": "kg",
+    "examples": []
+  },
+  "BODY_TYPE": {
+    "translation": "Телосложение",
+    "input": "manual",
+    "examples": [
+      { "en": "slim", "ru": "Худощавый" },
+      { "en": "athletic", "ru": "Спортивный" },
+      { "en": "muscular", "ru": "Мускулистый" },
+      { "en": "plus-size", "ru": "Плюс-сайз" }
+    ]
+  },
+  "PHOTO_STYLE": {
+    "translation": "Стиль фотосессии",
+    "input": "checkbox",
+    "examples": [
+      { "en": "fashion editorial", "ru": "Модная съёмка" },
+      { "en": "business portrait", "ru": "Деловой портрет" },
+      { "en": "glamour", "ru": "Гламур" },
+      { "en": "cinematic", "ru": "Киношный" },
+      { "en": "vintage", "ru": "Винтаж" }
+    ]
+  },
+  "FAMOUS_PHOTOGRAPHER_STYLE": {
+    "translation": "Стиль известного фотографа",
+    "input": "manual",
+    "examples": [
+      { "en": "Annie Leibovitz", "ru": "Энни Лейбовиц" },
+      { "en": "Richard Avedon", "ru": "Ричард Аведон" },
+      { "en": "Peter Lindbergh", "ru": "Питер Линдберг" }
+    ]
+  },
+  "LIGHTING_SETUP": {
+    "translation": "Схема освещения",
+    "input": "checkbox",
+    "examples": [
+      { "en": "softbox lighting", "ru": "Софтбокс" },
+      { "en": "Rembrandt lighting", "ru": "Свет Рембрандта" },
+      { "en": "beauty lighting", "ru": "Бьюти-свет" },
+      { "en": "high-key", "ru": "Светлый контрастный свет" },
+      { "en": "low-key", "ru": "Тёмный контраст" }
+    ]
+  },
+  "CAMERA_ANGLE": {
+    "translation": "Ракурс камеры",
+    "input": "manual",
+    "examples": [
+      { "en": "eye-level", "ru": "Уровень глаз" },
+      { "en": "low angle", "ru": "Снизу" },
+      { "en": "high angle", "ru": "Сверху" },
+      { "en": "close-up", "ru": "Крупный план" },
+      { "en": "full body", "ru": "В полный рост" }
+    ]
+  },
+  "FOCAL_LENGTH": {
+    "translation": "Фокусное расстояние (мм)",
+    "input": "text",
+    "examples": []
+  },
+  "DEPTH_OF_FIELD": {
+    "translation": "Глубина резкости",
+    "input": "manual",
+    "examples": [
+      { "en": "shallow", "ru": "Малая (боке)" },
+      { "en": "medium", "ru": "Средняя" },
+      { "en": "deep", "ru": "Большая" }
+    ]
+  },
+  "MODEL_ANGLE": {
+    "translation": "Ракурс модели",
+    "input": "checkbox",
+    "examples": [
+      { "en": "front view (full face)", "ru": "Анфас (лицом прямо в камеру)" },
+      { "en": "profile view (side view)", "ru": "Профиль (боковой ракурс)" },
+      { "en": "three-quarter view (3/4)", "ru": "Три четверти" },
+      { "en": "two-thirds view (2/3)", "ru": "Две трети" },
+      { "en": "over-the-shoulder view", "ru": "Через плечо" },
+      { "en": "back view", "ru": "Со спины" },
+      { "en": "chin-down angle", "ru": "С наклоном головы вниз" },
+      { "en": "chin-up angle", "ru": "С наклоном головы вверх" },
+      { "en": "high-angle shot", "ru": "Верхний ракурс (камера сверху)" },
+      { "en": "low-angle shot", "ru": "Нижний ракурс (камера снизу)" },
+      { "en": "close-up headshot", "ru": "Крупный план лица" },
+      { "en": "half-body shot (medium shot)", "ru": "По пояс" },
+      { "en": "three-quarter body shot", "ru": "Три четверти фигуры (до колен)" },
+      { "en": "full-body shot", "ru": "В полный рост" }
+    ]
+  },
+  "OUTFIT_STYLE": {
+    "translation": "Стиль одежды",
+    "input": "manual",
+    "examples": [
+      { "en": "casual", "ru": "Повседневный" },
+      { "en": "formal", "ru": "Формальный" },
+      { "en": "evening", "ru": "Вечерний" },
+      { "en": "sportswear", "ru": "Спортивный" },
+      { "en": "avant-garde", "ru": "Авангард" },
+      { "en": "streetwear", "ru": "Уличный" }
+    ]
+  },
+  "COLOR_PALETTE": {
+    "translation": "Цветовая палитра",
+    "input": "colorPicker",
+    "examples": []
+  },
+  "HEADWEAR": {
+    "translation": "Головной убор",
+    "input": "manual",
+    "examples": [
+      { "en": "hat", "ru": "Шляпа" },
+      { "en": "cap", "ru": "Кепка" },
+      { "en": "beanie", "ru": "Бини" },
+      { "en": "none", "ru": "Нет" }
+    ]
+  },
+  "TOP": {
+    "translation": "Верх",
+    "input": "checkbox",
+    "examples": [
+      { "en": "shirt", "ru": "Рубашка" },
+      { "en": "t-shirt", "ru": "Футболка" },
+      { "en": "blouse", "ru": "Блузка" },
+      { "en": "jacket", "ru": "Пиджак" },
+      { "en": "coat", "ru": "Пальто" },
+      { "en": "dress", "ru": "Платье" }
+    ]
+  },
+  "BOTTOM": {
+    "translation": "Низ",
+    "input": "manual",
+    "examples": [
+      { "en": "pants", "ru": "Брюки" },
+      { "en": "skirt", "ru": "Юбка" },
+      { "en": "shorts", "ru": "Шорты" },
+      { "en": "jeans", "ru": "Джинсы" },
+      { "en": "suit trousers", "ru": "Костюмные штаны" }
+    ]
+  },
+  "FOOTWEAR": {
+    "translation": "Обувь",
+    "input": "manual",
+    "examples": [
+      { "en": "sneakers", "ru": "Кроссовки" },
+      { "en": "boots", "ru": "Ботинки" },
+      { "en": "formal shoes", "ru": "Туфли" },
+      { "en": "heels", "ru": "Каблуки" },
+      { "en": "sandals", "ru": "Сандалии" }
+    ]
+  },
+  "ACCESSORIES": {
+    "translation": "Аксессуары",
+    "input": "checkbox",
+    "examples": [
+      { "en": "watch", "ru": "Часы" },
+      { "en": "jewelry", "ru": "Украшения" },
+      { "en": "scarf", "ru": "Шарф" },
+      { "en": "belt", "ru": "Ремень" },
+      { "en": "glasses", "ru": "Очки" }
+    ]
+  },
+  "LOCATION_TYPE": {
+    "translation": "Тип локации",
+    "input": "manual",
+    "examples": [
+      { "en": "studio", "ru": "Студия" },
+      { "en": "street", "ru": "Улица" },
+      { "en": "park", "ru": "Парк" },
+      { "en": "urban", "ru": "Город" },
+      { "en": "beach", "ru": "Пляж" },
+      { "en": "mountains", "ru": "Горы" }
+    ]
+  },
+  "COUNTRY": {
+    "translation": "Страна",
+    "input": "manual",
+    "examples": [
+      { "en": "Russia", "ru": "Россия" },
+      { "en": "USA", "ru": "США" },
+      { "en": "Japan", "ru": "Япония" },
+      { "en": "France", "ru": "Франция" },
+      { "en": "Italy", "ru": "Италия" }
+    ]
+  },
+  "SEASON": {
+    "translation": "Время года",
+    "input": "manual",
+    "examples": [
+      { "en": "spring", "ru": "Весна" },
+      { "en": "summer", "ru": "Лето" },
+      { "en": "autumn", "ru": "Осень" },
+      { "en": "winter", "ru": "Зима" }
+    ]
+  },
+  "TIME_OF_DAY": {
+    "translation": "Время суток",
+    "input": "manual",
+    "examples": [
+      { "en": "morning", "ru": "Утро" },
+      { "en": "noon", "ru": "Полдень" },
+      { "en": "sunset", "ru": "Закат" },
+      { "en": "night", "ru": "Ночь" }
+    ]
+  },
+  "WEATHER": {
+    "translation": "Погода",
+    "input": "manual",
+    "examples": [
+      { "en": "sunny", "ru": "Солнечно" },
+      { "en": "cloudy", "ru": "Облачно" },
+      { "en": "rainy", "ru": "Дождливо" },
+      { "en": "foggy", "ru": "Туманно" },
+      { "en": "snowy", "ru": "Снежно" }
+    ]
+  },
+  "BACKGROUND_TYPE": {
+    "translation": "Фон",
+    "input": "manualWithColor",
+    "examples": [
+      { "en": "seamless backdrop", "ru": "Однотонный фон" },
+      { "en": "textured wall", "ru": "Текстурная стена" },
+      { "en": "gradient", "ru": "Градиент" },
+      { "en": "cityscape", "ru": "Городской пейзаж" },
+      { "en": "nature", "ru": "Природа" }
+    ]
+  },
+  "MOOD/ATMOSPHERE": {
+    "translation": "Стиль",
+    "input": "checkbox",
+    "examples": [
+      { "en": "professional", "ru": "Профессиональный" },
+      { "en": "dramatic", "ru": "Драматичный" },
+      { "en": "elegant", "ru": "Элегантный" },
+      { "en": "joyful", "ru": "Радостный" },
+      { "en": "romantic", "ru": "Романтичный" },
+      { "en": "cinematic", "ru": "Киношный" }
+    ]
+  },
+  "POST_PROCESSING": {
+    "translation": "Обработка фото",
+    "input": "checkbox",
+    "examples": [
+      { "en": "realistic", "ru": "Реалистичная" },
+      { "en": "matte", "ru": "Матовая" },
+      { "en": "cinematic grade", "ru": "Киношная" },
+      { "en": "black & white", "ru": "Чёрно-белая" },
+      { "en": "vintage", "ru": "Винтажная" }
+    ]
+  }
+}

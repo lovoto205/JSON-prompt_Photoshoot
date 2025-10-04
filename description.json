@@ -1,0 +1,282 @@
+{
+  "GENDER": {
+    "translation": "Пол",
+    "input": "manual",
+    "examples": [
+      { "en": "man", "ru": "мужчина" },
+      { "en": "woman", "ru": "женщина" },
+      { "en": "non-binary", "ru": "небинарный" }
+    ]
+  },
+  "AGE": {
+    "translation": "Возраст",
+    "input": "manual",
+    "examples": [
+      { "en": "18-25", "ru": "18–25" },
+      { "en": "26-35", "ru": "26–35" },
+      { "en": "36-50", "ru": "36–50" },
+      { "en": "50+", "ru": "50+" }
+    ]
+  },
+  "WEIGHT_KG": {
+    "translation": "Вес (кг)",
+    "input": "manual",
+    "unit": "kg",
+    "examples": [
+      { "en": "54", "ru": "54" },
+      { "en": "72", "ru": "72" },
+      { "en": "85", "ru": "85" }
+    ]
+  },
+  "BODY_TYPE": {
+    "translation": "Телосложение",
+    "input": "manual",
+    "examples": [
+      { "en": "slim", "ru": "худощавый" },
+      { "en": "athletic", "ru": "спортивный" },
+      { "en": "muscular", "ru": "мускулистый" },
+      { "en": "plus-size", "ru": "плюс-сайз" }
+    ]
+  },
+  "FACIAL_FEATURES": {
+    "translation": "Особенности лица",
+    "input": "manual",
+    "examples": [
+      { "en": "freckles", "ru": "веснушки" },
+      { "en": "beard", "ru": "борода" },
+      { "en": "mustache", "ru": "усы" },
+      { "en": "makeup", "ru": "макияж" },
+      { "en": "glasses", "ru": "очки" },
+      { "en": "hairstyle", "ru": "причёска" }
+    ]
+  },
+  "PHOTO_STYLE": {
+    "translation": "Стиль фотосессии",
+    "input": "manual",
+    "examples": [
+      { "en": "fashion editorial", "ru": "модная съёмка" },
+      { "en": "business portrait", "ru": "деловой портрет" },
+      { "en": "glamour", "ru": "гламур" },
+      { "en": "cinematic", "ru": "киношный" },
+      { "en": "vintage", "ru": "винтаж" }
+    ]
+  },
+  "FAMOUS_PHOTOGRAPHER_STYLE": {
+    "translation": "Стиль известного фотографа",
+    "input": "manual",
+    "examples": [
+      { "en": "Annie Leibovitz", "ru": "Энни Лейбовиц" },
+      { "en": "Richard Avedon", "ru": "Ричард Аведон" },
+      { "en": "Peter Lindbergh", "ru": "Питер Линдберг" }
+    ]
+  },
+  "LIGHTING_SETUP": {
+    "translation": "Схема освещения",
+    "input": "manual",
+    "examples": [
+      { "en": "softbox lighting", "ru": "софтбокс" },
+      { "en": "Rembrandt lighting", "ru": "свет Рембрандта" },
+      { "en": "beauty lighting", "ru": "бьюти-свет" },
+      { "en": "high-key", "ru": "светлый контрастный свет" },
+      { "en": "low-key", "ru": "тёмный контраст" }
+    ]
+  },
+  "CAMERA_ANGLE": {
+    "translation": "Ракурс камеры",
+    "input": "manual",
+    "examples": [
+      { "en": "eye-level", "ru": "уровень глаз" },
+      { "en": "low angle", "ru": "снизу" },
+      { "en": "high angle", "ru": "сверху" },
+      { "en": "close-up", "ru": "крупный план" },
+      { "en": "full body", "ru": "в полный рост" }
+    ]
+  },
+  "FOCAL_LENGTH": {
+    "translation": "Фокусное расстояние",
+    "input": "manual",
+    "unit": "mm",
+    "examples": [
+      { "en": "35", "ru": "35" },
+      { "en": "50", "ru": "50" },
+      { "en": "85", "ru": "85" },
+      { "en": "105", "ru": "105" }
+    ]
+  },
+  "DEPTH_OF_FIELD": {
+    "translation": "Глубина резкости",
+    "input": "manual",
+    "examples": [
+      { "en": "shallow", "ru": "мелкая (боке)" },
+      { "en": "medium", "ru": "средняя" },
+      { "en": "deep", "ru": "глубокая" }
+    ]
+  },
+  "OUTFIT_STYLE": {
+    "translation": "Стиль одежды",
+    "input": "manual",
+    "examples": [
+      { "en": "casual", "ru": "повседневный" },
+      { "en": "formal", "ru": "формальный" },
+      { "en": "evening", "ru": "вечерний" },
+      { "en": "sportswear", "ru": "спортивный" },
+      { "en": "avant-garde", "ru": "авангард" },
+      { "en": "streetwear", "ru": "уличный" }
+    ]
+  },
+  "COLOR_PALETTE": {
+    "translation": "Цветовая палитра",
+    "input": "manual",
+    "examples": [
+      { "en": "warm tones", "ru": "тёплые тона" },
+      { "en": "cool tones", "ru": "холодные тона" },
+      { "en": "monochrome", "ru": "монохром" },
+      { "en": "pastel", "ru": "пастельные" },
+      { "en": "vibrant", "ru": "яркие" }
+    ]
+  },
+  "HEADWEAR": {
+    "translation": "Головной убор",
+    "input": "manual",
+    "examples": [
+      { "en": "hat", "ru": "шляпа" },
+      { "en": "cap", "ru": "кепка" },
+      { "en": "beanie", "ru": "бини" },
+      { "en": "none", "ru": "нет" }
+    ]
+  },
+  "TOP": {
+    "translation": "Верх",
+    "input": "manual",
+    "examples": [
+      { "en": "shirt", "ru": "рубашка" },
+      { "en": "t-shirt", "ru": "футболка" },
+      { "en": "blouse", "ru": "блузка" },
+      { "en": "jacket", "ru": "пиджак" },
+      { "en": "coat", "ru": "пальто" },
+      { "en": "dress", "ru": "платье" }
+    ]
+  },
+  "BOTTOM": {
+    "translation": "Низ",
+    "input": "manual",
+    "examples": [
+      { "en": "pants", "ru": "брюки" },
+      { "en": "skirt", "ru": "юбка" },
+      { "en": "shorts", "ru": "шорты" },
+      { "en": "jeans", "ru": "джинсы" },
+      { "en": "suit trousers", "ru": "костюмные штаны" }
+    ]
+  },
+  "FOOTWEAR": {
+    "translation": "Обувь",
+    "input": "manual",
+    "examples": [
+      { "en": "sneakers", "ru": "кроссовки" },
+      { "en": "boots", "ru": "ботинки" },
+      { "en": "formal shoes", "ru": "туфли" },
+      { "en": "heels", "ru": "каблуки" },
+      { "en": "sandals", "ru": "сандалии" }
+    ]
+  },
+  "ACCESSORIES": {
+    "translation": "Аксессуары",
+    "input": "manual",
+    "examples": [
+      { "en": "watch", "ru": "часы" },
+      { "en": "jewelry", "ru": "украшения" },
+      { "en": "scarf", "ru": "шарф" },
+      { "en": "belt", "ru": "ремень" },
+      { "en": "glasses", "ru": "очки" }
+    ]
+  },
+  "LOCATION_TYPE": {
+    "translation": "Тип локации",
+    "input": "manual",
+    "examples": [
+      { "en": "studio", "ru": "студия" },
+      { "en": "street", "ru": "улица" },
+      { "en": "park", "ru": "парк" },
+      { "en": "urban", "ru": "город" },
+      { "en": "beach", "ru": "пляж" },
+      { "en": "mountains", "ru": "горы" }
+    ]
+  },
+  "COUNTRY": {
+    "translation": "Страна",
+    "input": "manual",
+    "examples": [
+      { "en": "Russia", "ru": "Россия" },
+      { "en": "USA", "ru": "США" },
+      { "en": "Japan", "ru": "Япония" },
+      { "en": "France", "ru": "Франция" },
+      { "en": "Italy", "ru": "Италия" }
+    ]
+  },
+  "SEASON": {
+    "translation": "Время года",
+    "input": "manual",
+    "examples": [
+      { "en": "spring", "ru": "весна" },
+      { "en": "summer", "ru": "лето" },
+      { "en": "autumn", "ru": "осень" },
+      { "en": "winter", "ru": "зима" }
+    ]
+  },
+  "TIME_OF_DAY": {
+    "translation": "Время суток",
+    "input": "manual",
+    "examples": [
+      { "en": "morning", "ru": "утро" },
+      { "en": "noon", "ru": "полдень" },
+      { "en": "golden hour", "ru": "золотой час" },
+      { "en": "sunset", "ru": "закат" },
+      { "en": "night", "ru": "ночь" }
+    ]
+  },
+  "WEATHER": {
+    "translation": "Погода",
+    "input": "manual",
+    "examples": [
+      { "en": "sunny", "ru": "солнечно" },
+      { "en": "cloudy", "ru": "облачно" },
+      { "en": "rainy", "ru": "дождливо" },
+      { "en": "foggy", "ru": "туманно" },
+      { "en": "snowy", "ru": "снежно" }
+    ]
+  },
+  "BACKGROUND_TYPE": {
+    "translation": "Фон",
+    "input": "manual",
+    "examples": [
+      { "en": "seamless backdrop", "ru": "однотонный фон" },
+      { "en": "textured wall", "ru": "текстурная стена" },
+      { "en": "gradient", "ru": "градиент" },
+      { "en": "cityscape", "ru": "городской пейзаж" },
+      { "en": "nature", "ru": "природа" }
+    ]
+  },
+  "MOOD/ATMOSPHERE": {
+    "translation": "Настроение",
+    "input": "manual",
+    "examples": [
+      { "en": "professional", "ru": "профессиональное" },
+      { "en": "dramatic", "ru": "драматичное" },
+      { "en": "elegant", "ru": "элегантное" },
+      { "en": "joyful", "ru": "радостное" },
+      { "en": "romantic", "ru": "романтичное" },
+      { "en": "cinematic", "ru": "киношное" }
+    ]
+  },
+  "POST_PROCESSING": {
+    "translation": "Обработка фото",
+    "input": "manual",
+    "examples": [
+      { "en": "realistic", "ru": "реалистичная" },
+      { "en": "matte", "ru": "матовая" },
+      { "en": "cinematic grade", "ru": "киношная" },
+      { "en": "black & white", "ru": "чёрно-белая" },
+      { "en": "vintage", "ru": "винтажная" }
+    ]
+  }
+}
