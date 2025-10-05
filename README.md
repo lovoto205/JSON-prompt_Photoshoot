@@ -6,7 +6,7 @@ JSON-prompt generator for AI photoshoot creation, optimized for Nano Banana and 
 
 ## Demo
 
-<video src=".github/images/video_.mp4" controls></video>
+[📹 Watch demo video](.github/images/video_.mp4)
 
 ![Screenshot](.github/images/screenshot.png)
 
