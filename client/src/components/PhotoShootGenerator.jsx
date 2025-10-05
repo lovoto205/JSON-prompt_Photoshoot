@@ -14,6 +14,19 @@ export default function PhotoShootGenerator() {
     if (!param) return paramKey;
     return language === "en" && param.translationEn ? param.translationEn : param.translation;
   };
+
+  // Функция для получения переведенного значения
+  const getValueTranslation = (paramKey, value) => {
+    if (!value) return "";
+    const param = parameters[paramKey];
+    if (!param || !param.examples) return value;
+
+    const example = param.examples.find(ex => ex.ru === value);
+    if (example && language === "en") {
+      return example.en;
+    }
+    return value;
+  };
   const [values, setValues] = useState({
     // Модель
     GENDER: "",
@@ -675,7 +688,7 @@ export default function PhotoShootGenerator() {
                   key={idx}
                   className="inline-flex items-center gap-1 px-2 py-1 bg-gray-700 text-gray-200 text-xs rounded"
                 >
-                  {val}
+                  {getValueTranslation(paramKey, val)}
                   <button
                     onClick={() => handleCheckboxChange(paramKey, val)}
                     className="hover:text-red-400"
@@ -702,7 +715,7 @@ export default function PhotoShootGenerator() {
             className={inputStyles}
           >
             <span className={currentValue ? "text-gray-100" : "text-gray-500"}>
-              {currentValue || placeholder || t.buttons.no}
+              {currentValue ? getValueTranslation(paramKey, currentValue) : (placeholder || t.buttons.no)}
             </span>
             <svg
               className="absolute right-3 top-[2.35rem] w-4 h-4 text-gray-500 pointer-events-none transition-transform"
@@ -836,7 +849,7 @@ export default function PhotoShootGenerator() {
             className={inputStyles}
           >
             <span className={currentValue ? "text-gray-100" : "text-gray-500"}>
-              {currentValue || placeholder || t.buttons.no}
+              {currentValue ? getValueTranslation(paramKey, currentValue) : (placeholder || t.buttons.no)}
             </span>
             <svg
               className="absolute right-3 top-[2.35rem] w-4 h-4 text-gray-500 pointer-events-none transition-transform"
@@ -953,7 +966,7 @@ export default function PhotoShootGenerator() {
               className={`${inputStyles} ${isDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
               <span className={currentValue ? "text-gray-100" : "text-gray-500"}>
-                {currentValue || placeholder || t.buttons.no}
+                {currentValue ? getValueTranslation(paramKey, currentValue) : (placeholder || t.buttons.no)}
               </span>
               <svg
                 className="absolute right-3 top-[2.35rem] w-4 h-4 text-gray-500 pointer-events-none transition-transform"
