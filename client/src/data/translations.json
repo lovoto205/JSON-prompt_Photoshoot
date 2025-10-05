@@ -35,7 +35,7 @@
       "back": "Назад"
     },
     "donation": {
-      "text": "Буду благодарен за донат 300 ₽ на кофе с круассаном ☕🥐<br />Это мотивирует делать новые промпты на другие темы!",
+      "text": "Буду благодарен за донат на кофе с круассаном ☕🥐<br />Это мотивирует делать новые промпты на другие темы!",
       "modalTitle": "Поддержать проект"
     },
     "modal": {
@@ -114,7 +114,7 @@
       "back": "Back"
     },
     "donation": {
-      "text": "I would appreciate a donation of $5 for a coffee and croissant ☕🥐<br />It motivates me to create new prompts on other topics!"
+      "text": "I would appreciate a donation for a coffee and croissant ☕🥐<br />It motivates me to create new prompts on other topics!"
     },
     "modal": {
       "promptTitle": "Your JSON-prompt",
