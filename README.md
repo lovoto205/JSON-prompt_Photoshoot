@@ -4,10 +4,6 @@ JSON-prompt generator for AI photoshoot creation, optimized for Nano Banana and 
 
 🌐 **Live Demo:** [https://json-prompt-photoshoot.vercel.app/](https://json-prompt-photoshoot.vercel.app/)
 
-## Demo
-
-[📹 Watch demo video](.github/images/video_.mp4)
-
 ![Screenshot](.github/images/screenshot.png)
 
 ## Features
