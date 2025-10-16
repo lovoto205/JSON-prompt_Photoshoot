@@ -100,7 +100,6 @@ export default function PhotoShootGenerator() {
   const [showBackgroundColorPicker, setShowBackgroundColorPicker] = useState(false);
   const [showPromptModal, setShowPromptModal] = useState(false);
   const [showHelpModal, setShowHelpModal] = useState(false);
-  const [showDonateModal, setShowDonateModal] = useState(false);
 
   const dropdownRefs = useRef({});
 
@@ -467,13 +466,12 @@ export default function PhotoShootGenerator() {
       if (e.key === 'Escape') {
         if (showPromptModal) setShowPromptModal(false);
         if (showHelpModal) setShowHelpModal(false);
-        if (showDonateModal) setShowDonateModal(false);
         if (colorPickerState.isOpen) closeColorPicker();
       }
     };
     document.addEventListener('keydown', handleEscKey);
     return () => document.removeEventListener('keydown', handleEscKey);
-  }, [showPromptModal, showHelpModal, showDonateModal, colorPickerState.isOpen]);
+  }, [showPromptModal, showHelpModal, colorPickerState.isOpen]);
 
   useEffect(() => {
     if (openDropdown && dropdownRefs.current[openDropdown]) {
@@ -1242,26 +1240,6 @@ export default function PhotoShootGenerator() {
             </button>
           </div>
         </div>
-
-        {/* Блок с донатом */}
-        <div className="mb-2 bg-[#1a1d24] border border-gray-800 rounded-xl p-4 shadow-[0_0px_0px_rgba(0,0,0,0.12)]">
-          <div className="flex items-center justify-center gap-4">
-            <button
-              onClick={() => {
-                if (language === 'ru') {
-                  setShowDonateModal(true);
-                } else {
-                  window.open('https://ko-fi.com/G2G71MAQKX', '_blank');
-                }
-              }}
-              className="px-6 py-2.5 rounded-lg font-semibold text-sm transition-all hover:opacity-90 border whitespace-nowrap"
-              style={{ backgroundColor: '#ffaa00', borderColor: '#ffaa00', color: '#0f1115' }}
-            >
-              {t.buttons.donate}
-            </button>
-            <p className="text-gray-300 text-sm" dangerouslySetInnerHTML={{ __html: t.donation.text }}></p>
-          </div>
-        </div>
       </div>
 
       {/* Глобальное модальное окно для выбора цвета */}
@@ -1426,47 +1404,6 @@ export default function PhotoShootGenerator() {
               >
                 {t.buttons.understand}
               </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Модальное окно с донатом */}
-      {showDonateModal && language === 'ru' && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4" onClick={() => setShowDonateModal(false)}>
-          <div className="bg-[#1a1d24] border border-gray-800 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.3)] overflow-hidden max-w-full" onClick={(e) => e.stopPropagation()}>
-            <div className="flex items-center justify-between px-6 py-4 bg-[#1a1d24] border-b border-gray-800">
-              <h3 className="text-xl font-semibold text-gray-100">{t.donation.modalTitle}</h3>
-              <button
-                onClick={() => setShowDonateModal(false)}
-                className="text-gray-400 hover:text-gray-200 transition-colors"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div className="overflow-hidden" style={{
-              width: window.innerWidth < 560 ? `${window.innerWidth - 32}px` : '528px',
-              height: window.innerWidth < 560 ? '168px' : '244px',
-              marginLeft: window.innerWidth < 560 ? '-6px' : '0'
-            }}>
-              <iframe
-                src="https://widget.donatepay.ru/widgets/page/07a9a96b8ed0b637ff25d29fae0a81a3950716ba903a22b4ef25ef36889a0057?widget_id=7066804&sum=300"
-                width="518"
-                height="244"
-                frameBorder="0"
-                scrolling="no"
-                style={{
-                  display: 'block',
-                  border: 'none',
-                  overflow: 'hidden',
-                  margin: 0,
-                  padding: 0,
-                  transform: window.innerWidth < 560 ? `scale(${(window.innerWidth - 32) / 518})` : 'none',
-                  transformOrigin: 'top left'
-                }}
-              ></iframe>
             </div>
           </div>
         </div>
